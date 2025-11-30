@@ -42,3 +42,33 @@ To build chapters of technology that not only restore devices — but empower pe
 Every line of code, every repair, and every lesson is part of that mission.
 
 
+# Project testing - Changelog
+
+This file documents all backup and analysis steps for the Note 4 (N910C).
+
+---
+
+## Template Entry
+- **Date:** YYYY-MM-DD  
+- **Action:** <Describe what was done, e.g. "Created new EFS backup via TWRP">  
+- **Location:** <Path on SD card or GitHub folder>  
+- **Notes:** <Any observations, e.g. CSC code value, file size differences, hash verification>  
+
+---
+
+## Example Entries
+
+- **2025-10-17**  
+  - **Action:** Initial EFS backup created via TWRP  
+  - **Location:** `/storage/2B4B-69C9/EFS N910C 2025-10-17`  
+  - **Notes:** Backup verified, CSC code observed as `XSG`
+
+- **2025-11-29**  
+  - **Action:** Manual copy of EFS folder added  
+  - **Location:** `/storage/2B4B-69C9/efs`  
+  - **Notes:** Hashes generated, compared with initial backup, no differences found
+
+- **2025-11-30**  
+  - **Action:** TWRP backup folder confirmed and indexed  
+  - **Location:** `/storage/2B4B-69C9/Backups_N910C`  
+  - **Notes:** Full system + EFS partitions included
