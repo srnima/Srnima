@@ -72,3 +72,40 @@ This file documents all backup and analysis steps for the Note 4 (N910C).
   - **Action:** TWRP backup folder confirmed and indexed  
   - **Location:** `/storage/2B4B-69C9/Backups_N910C`  
   - **Notes:** Full system + EFS partitions included
+
+
+# Season: XboX 🎮
+Focus exclusively on **Xbox Series X|S**
+
+---
+
+## 🛠️ Goals of the Season
+- Document and analyze Xbox Series S/X hardware
+- Record thermal and performance tests before/after cleaning and repair
+- Archive emergency and creative tricks
+- Compare with older consoles (Xbox 360)
+- Build supporting tools and scripts
+
+---
+
+## 🔧 Emergency Trick – Replacing Thermal Paste
+- **Issue:** Console temperature before cleaning reached 60–65°C.
+- **Action:** Full disassembly, cleaning, and reassembly.
+- **Challenge:** No proper thermal paste available.
+- **Solution:** Folded medium-thickness aluminum foil (~1×0.5 cm) placed between APU and heatsink.
+- **Result:** Temperature dropped by ~30°C, with no contact to the board or sensitive components.
+
+⚠️ This method is only an **emergency workaround** and not a permanent replacement for thermal paste. A reliable product such as **DeepCool Z5** is recommended for long-term stability.
+
+---
+
+## 📊 Next Tests
+- Run heavy games (Resident Evil, Forza Horizon) to check stable temperatures
+- Record thermal logs before and after applying proper paste
+- Compare fan behavior and noise levels
+
+---
+
+## 📂 Suggested Repository Structure
+
+--->
