@@ -1,5 +1,5 @@
 
-# Hi there 👋
+# Hi there 👋 
 
 ## About Me
 I'm **srNima** — an engineer who lives through technology, repair, teaching, and building new chapters in the digital world.
@@ -34,7 +34,7 @@ Every line of code, every repair, and every lesson is part of that mission.
 This file documents all backup and analysis steps for the Note 4 (N910C).
 
 ### Template Entry
-- **Date:** YYYY-MM-DD  
+- **Date:** 2025-11-03  
 - **Action:** Describe what was done (e.g. "Created EFS backup via TWRP")  
 - **Location:** Path on SD card or GitHub folder  
 - **Notes:** Observations (CSC code, file size differences, hash verification)  
@@ -88,3 +88,174 @@ A reliable product such as **DeepCool Z5** is recommended for long-term stabilit
 
 Updated README with new structure and Season: XboX
 
+# MOBILE — Mobile Kernel Engineering & Hardware Analysis  
+Created, documented and engineered by **srNima**  
+Advanced Documentation • Deep Kernel Tuning • Visual Technical Resume
+
+---
+
+## 1. Device Profile (J700H)
+| Component | Specification |
+|----------|---------------|
+| Owner / Engineer | **srNima** |
+| Model | Samsung Galaxy J700H |
+| SoC | Exynos 7580 (8× Cortex-A53) |
+| GPU | Mali-T720 MP2 |
+| RAM | 1.5–2GB LPDDR3 |
+| Storage | eMMC 5.0 |
+| Kernel Base | Linux 3.10.x |
+| ROM | LineageOS |
+| CCustomKernel | kernel-final+ |
+
+---
+
+## 2. Kernel Feature Overview (kernel-final+)
+Maintained, tuned and tested by **srNima**
+
+- Custom CPU hotplug driver (Lazypug)
+- Advanced I/O scheduler tuning
+- ZRAM compression support (lz4, lzo, zstd)
+- TCP congestion control suite (Westwood, Cubic, Reno, BIC, HTCP)
+- Power Suspend modes (Kernel, Hybrid, LCD Hooks)
+- Fsync toggle
+- VM tuning hooks
+- Misc block-layer optimizations
+
+---
+
+## 3. CPU Management (Lazypug)
+
+### Recommended Configuration (Performance-Balanced)
+Optimized and validated by **srNima**
+
+| Setting | Value | Reason |
+|--------|--------|--------|
+| Profile | Balanced | Best balance between responsiveness and battery |
+| Touch Boost | Enabled | Faster touch response |
+| Hysteresis Value | 1–2 | Faster reaction to load changes |
+| CPU Threshold | 6 | Activates cores at the right time |
+| Max CPU Online | 8 | Full use of all A53 cores |
+
+### Technical Notes
+- Lower threshold → cores activate sooner → better performance  
+- Higher threshold → lower battery usage but possible micro-lag  
+- Lazypug replaces MPDecision with more stable behavior
+
+---
+
+## 4. Virtual Memory (ZRAM)
+
+### Recommended Configuration
+| Setting | Value |
+|--------|--------|
+| ZRAM Disksize | 1024MB |
+| Compression Algorithm | lz4 |
+
+### Technical Notes
+- lz4 is the fastest algorithm for low-RAM devices  
+- 1024MB is the sweet spot between performance and RAM pressure  
+- Higher than 1.5GB may cause stalls on J700H
+
+---
+
+## 5. Network Stack (TCP Congestion Control)
+
+### Recommended Algorithm: Westwood
+| Algorithm | Use-Case | Notes |
+|-----------|----------|-------|
+| Westwood | Mobile/Wi-Fi | Best for unstable networks |
+| Cubic | Stable networks | Default in modern kernels |
+| Reno | Legacy | Only for testing |
+| BIC | Aggressive | Not recommended |
+| HTCP | Datacenter | Not suitable for mobile |
+
+---
+
+## 6. Power Suspend
+
+### Recommended Mode: Hybrid
+- Smart balance between Kernel Mode and LCD Hooks  
+- Lower idle consumption  
+- No lag on wake-up
+
+---
+
+## 7. Filesystem & I/O
+
+| Setting | Recommended | Notes |
+|---------|-------------|-------|
+| Fsync | OFF | Faster I/O (small risk on crash) |
+| I/O Stats | ON | For monitoring |
+| Rotational Storage | OFF | Device uses eMMC |
+| Add Random | OFF | Only useful for HDD |
+| RQ Affinity | 2 | Best for multi-core |
+| No-Merges | 1 | More accurate block-layer behavior |
+| NR Requests | 256 | Good for eMMC 5.0 |
+
+---
+
+## 8. Visual Resume (Gallery Template)
+
+### Screenshot Template  
+Documented by **srNima**
+
+- Device: J700H  
+- ROM: LineageOS  
+- Kernel: kernel-final+  
+- Section: (Lazypug / ZRAM / Misc / I/O / Power Suspend)  
+- Active Settings:  
+  - CPU Threshold: 6  
+  - ZRAM: 1024MB (lz4)  
+  - TCP: Westwood  
+  - Power Suspend: Hybrid  
+- Technical Description:  
+  Explain what the screenshot shows and why it matters.  
+- Notes:  
+  - Reason for choosing the setting  
+  - Test results  
+  - Effect on performance/battery
+
+---
+
+## 9. Benchmark & Stress Testing
+
+| Test | Result | Notes |
+|------|--------|--------|
+| CPU Scaling | Pending | Needs screenshot |
+| RAM Pressure | Pending | With ZRAM enabled |
+| I/O Throughput | Pending | With Fsync OFF |
+| Boot Time | Pending | After final tuning |
+
+---
+
+## 10. Hardware Diagnostics (J700H)
+
+### Repair Template  
+Performed by **srNima**
+
+- Issue:  
+- Diagnosis:  
+- Fix Steps:  
+- Result:  
+- Photos: Linked in Gallery
+
+---
+
+## 11. Folder Structure
+
+```
+MOBILE/
+├── Kernels/
+│   └── Kernel-final  ├── Screenshots/
+│       └── README.md
+├── ROMs/
+│   └── LineageOS/
+├── Repairs/
+├── Gallery/
+│   └── J700H/
+```
+
+---
+
+## Status
+This season is actively updated with kernel tests, VM tuning, I/O analysis, and visual documentation by **srNima**.
