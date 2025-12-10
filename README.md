@@ -80,8 +80,29 @@ A reliable product such as **DeepCool Z5** is recommended for long-term stabilit
 ## 📊 Next Tests
 - Run heavy games (Resident Evil, Forza Horizon) to check stable temperatures  
 - Record thermal logs before and after applying proper paste  
-- Compare fan behavior and noise levels  
+- Compare fan behavior and noise levels
 
+## 🎮 Xbox GamePass Library – Installed Titles  
+
+### 🟩 AAA Titles
+- **Hogwarts Legacy**  
+- **Grand Theft Auto V (GTA 5)**  
+- **Red Dead Redemption 2**  
+- **Assassin’s Creed: Valhalla**  
+- **Shadow of the Tomb Raider**
+
+### 🟦 Racing & Open‑World
+- **Forza Horizon 5 – Premium Edition**  
+- **Microsoft Flight Simulator 2024**
+
+### 🟪 Action / Adventure
+- **Batman: Arkham Knight**  
+- **Crash Bandicoot**  
+- **Stray**
+
+### 🟥 Fighting & Family Games
+- **Tekken 8**  
+- **Ben 10: Power Trip**
 ---
 
 ## 📂 Suggested Repository Structure
