@@ -3,6 +3,23 @@
 
 ## About Me
 I'm **srNima** — an engineer who lives through technology, repair, teaching, and building new chapters in the digital world.
+
+## 🎧 MicroSpy Player — Autonomous Audio Recorder (2014)
+
+This device was designed and assembled by **srNima** in 2014, long before many modern low‑power audio modules existed. At first glance it looks like a simple MP3 player, but internally it is a fully independent audio‑recording system with the following capabilities:
+
+- **USB-powered operation** for both energy input and data transfer to the internal 8GB storage  
+- **Automatic microphone activation** when connected to a charger or USB power source  
+- **Hands‑free audio recording** in AMR format with efficient file size  
+- **3.5mm audio output jack** for headphone playback or signal monitoring  
+- **Fully hand‑assembled PCB**, including ICs, diodes, and supporting components  
+- **Stealth-friendly design**, intentionally shaped like a standard music player for compactness and portability  
+
+### Purpose of the Project
+This build was created as a **technical experiment**, demonstrating how a self-contained embedded system can record audio without an operating system, user interface, or external software. It showcases early work in low-power electronics, embedded logic, and hardware miniaturization.
+
+> This project is for educational and archival purposes. Recording audio without consent is unethical and may be illegal depending on jurisdiction. The creator does not endorse misuse of this device.
+
 ## 🧠 Computer & Creative Skills
 
 A combination of engineering, repair, and digital creativity:
