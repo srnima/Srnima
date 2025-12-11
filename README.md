@@ -3,7 +3,55 @@
 
 ## About Me
 I'm **srNima** — an engineer who lives through technology, repair, teaching, and building new chapters in the digital world.
+## 🧠 Computer & Creative Skills
 
+A combination of engineering, repair, and digital creativity:
+
+### 🔧 Technical & Engineering
+- Hardware repair (Samsung, iPhone, laptops, desktops)
+- Power engineering (built custom voltage‑stabilizing transformer)
+- Receiver repair (iClass, StarSat, Strong, StarMax)
+- Samsung 32‑bit board diagnostics
+- Bootloader analysis & system recovery
+- Custom OS installation (LineageOS, AndroidOS, Linux)
+- CPU & fan optimization on laptops/desktops
+
+### 💻 Software & Digital Skills
+- HTML / CSS (certified)
+- Flash 8 (advertising & animation)
+- Basic scripting for testing & automation
+- Technical documentation for global communities
+
+### 🎨 Creative & Advertising
+- Designed promotional concepts for **Dunhill Silver**
+- Received appreciation gift + payment for design proposal
+- Experience in branding, layout, and visual concepts
+
+---
+
+## 💈 Barbering & Human Skills
+
+Before engineering, I worked as a **professional barber** in Tehran:
+
+- Pasdaran – Borj Sefid – Rose Siah Salon  
+- Ferdowsi Square – Bahar Street  
+- Trained at **Midlen Enghelab** (professional certification)
+
+✂ 💇‍♀️I continue cutting hair today — even after my accident — with the same precision and care.
+
+---
+
+## 🛠️ Life Journey
+
+I live with a wheelchair and T5–T6 spinal implants, but I’ve never stopped building, repairing, or teaching.  
+My path includes:
+
+- Transition from standing work to seated technical work  
+- Supporting elderly, blind, and vulnerable customers  
+- Combining engineering + creativity + human connection  
+- Building **Season XboX** as a new chapter of exploration  
+- Planning to travel across Europe to teach kids & engineers
+- 
 With deep experience in repairing mobile phones, laptops, and desktop systems, my work includes installing custom operating systems (AndroidOS, LineageOS, Linux), optimizing CPU and fan performance, and documenting full boot and repair processes.  
 Beyond technical skills, my mission is to make technology understandable, accessible, and inspiring — for children, beginners, and professional engineers alike, in every country.
 
